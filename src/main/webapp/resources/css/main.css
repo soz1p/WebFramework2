@@ -1,46 +1,77 @@
 @charset "UTF-8";
 
-.formtable {
-    width:400px;
-    border: 1px solid blue;
-    margin:50px;
-    padding:10px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow-y: auto;
+}
 
+.homebutton {
+    position: fixed;
+    top: 2px;
+    right: 10px;
+}
+
+h1 {
+    color: #F8404B;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formtable {
+    padding: 20px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .label {
-    text-align: right;
-    vertical-align:top;
+    font-weight: bold;
+    padding-right: 10px;
+    color: #333;
 }
 
 .control {
-    margin-left:10px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
-textarea {
-    width:300px;
-    height:100px;
+input[type="submit"] {
+    padding: 12px 24px;
+    background-color: #F8404B;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
-input[type=text] {
-    width:300px;
-    border-width: 1px;
-    padding: 2px;
-
-}
-
-input[type=submit] {
-    display:block;
-    width:50%;
-    margin:0 auto;
-}
-
-input[type=submit]:hover {
-    background-color:#45a049;
+input[type="submit"]:hover {
+    background-color: #FF5A5F;
 }
 
 .error {
-    font-size: small;
-    color:red;
-    margin-left:10px;
+    color: #FF0000;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
